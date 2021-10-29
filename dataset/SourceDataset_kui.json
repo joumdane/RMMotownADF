@@ -14,26 +14,33 @@
 				"precision": 10
 			},
 			{
-				"name": "FestivalId",
+				"name": "ScheduleId",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "Name",
-				"type": "nvarchar"
+				"name": "ArtistId",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "ImagePath",
-				"type": "nvarchar"
+				"name": "StageId",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "Website",
-				"type": "nvarchar"
+				"name": "Time",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "IsFavorite",
+				"type": "bit"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Artists"
+			"table": "ScheduleItems"
 		}
 	}
 }
