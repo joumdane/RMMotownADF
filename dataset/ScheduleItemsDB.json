@@ -1,0 +1,46 @@
+{
+	"name": "ScheduleItemsDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ScheduleId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ArtistId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StageId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Time",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "IsFavorite",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ScheduleItems"
+		}
+	}
+}
